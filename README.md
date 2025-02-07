@@ -1,6 +1,6 @@
 # Functions
-`basetoten(number, base)` Converts a number from any base to decimal.<br>
-`tentobase(number, base)` Converts a number from decimal to another base.<br>
+`basetodec(number, base)` Converts a number from any base to decimal.<br>
+`dectobase(number, base)` Converts a number from decimal to another base.<br>
 `basetobase(number, base_origin, base_goal)` Converts a number from any base to any other base.
 
 # Examples
@@ -10,7 +10,7 @@ Decimal to binary:
 local baseconvertion = require('baseconvertion')
 
 for i = -2, 2, 0.25 do
-  print(i, baseconvertion.tentobase(i,2))
+  print(i, baseconvertion.dectobase(i,2))
 end
 ```
 
@@ -39,7 +39,7 @@ Hexadecimal to decimal:
 local baseconvertion = require('baseconvertion')
 
 for i = 8, 17 do
-    print(baseconvertion.tentobase(i,16))
+    print(baseconvertion.dectobase(i,16))
 end
 ```
 
