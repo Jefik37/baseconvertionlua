@@ -112,8 +112,9 @@ end
 
 function F.basetoten(number, base)
 
+    local negative = false
     if (string.sub(number,1,1)) == '-' then
-        local negative = true
+        negative = true
         number = tostring(string.sub(number,2,-1))
     end
 
@@ -147,6 +148,10 @@ function F.basetoten(number, base)
         end
     end
     ------------------ FRACTIONAL PART ------------------
+
+    if negative then
+        result = -result
+    end
 
     return result
 
