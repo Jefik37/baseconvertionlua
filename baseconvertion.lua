@@ -45,7 +45,7 @@ local function contains(tbl, value)
     return false
 end
 
-function F.tentobase(number, base)
+function F.dectobase(number, base)
 
     local integers = {}
     local fractionals = {}
@@ -110,7 +110,7 @@ function F.tentobase(number, base)
 
 end
 
-function F.basetoten(number, base)
+function F.basetodec(number, base)
 
     local negative = false
     if (string.sub(number,1,1)) == '-' then
