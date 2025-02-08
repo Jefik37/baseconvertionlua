@@ -46,6 +46,7 @@ local function contains(tbl, value)
 end
 
 function F.dectobase(number, base)
+    number = tonumber(number)
 
     local integers = {}
     local fractionals = {}
