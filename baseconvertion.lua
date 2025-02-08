@@ -46,6 +46,7 @@ local function contains(tbl, value)
 end
 
 function F.dectobase(number, base)
+    if base < 2 or base ~= math.floor(base)then return nil end
     number = tonumber(number)
 
     local integers = {}
@@ -112,6 +113,7 @@ function F.dectobase(number, base)
 end
 
 function F.basetodec(number, base)
+    if base < 2 or base ~= math.floor(base)then return nil end
 
     local negative = false
     if (string.sub(number,1,1)) == '-' then
