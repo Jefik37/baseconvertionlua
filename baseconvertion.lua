@@ -159,8 +159,8 @@ end
 
 function F.basetobase(number, base_origin, base_goal)
 
-    local result = F.basetoten(number, base_origin)
-    result = F.tentobase(result, base_goal)
+    local result = F.basetodec(number, base_origin)
+    result = F.dectobase(result, base_goal)
     return result
 
 end
